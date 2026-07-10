@@ -62,3 +62,36 @@
 **Dado** que o usuário realizou o logoff com sucesso;
 
 **Quando** o usuário tentar navegar diretamente para
+
+
+# 3. Botão de Finalizar Compra
+
+## Cenário 1: Finalizar compra com carrinho válido e usuário logado
+
+**Dado** que o usuário está logado em sua conta;
+
+**E** possui pelo menos um jogo adicionado ao carrinho de compras;
+
+**Quando** o usuário clicar no botão "Finalizar Compra";
+
+**Então** o sistema deve direcionar o usuário para a tela de seleção de pagamento e endereço de entrega.
+
+## Cenário 2: Impedir finalização de compra com carrinho vazio
+
+**Dado** que o usuário está na página do carrinho de compras;
+
+**E** não há nenhum item ou jogo adicionado ao carrinho;
+
+**Quando** o usuário visualizar a página;
+
+**Então** o botão "Finalizar Compra" deve estar desabilitado (cinza);
+
+**E** deve exibir a mensagem: "Seu carrinho está vazio. Adicione jogos para continuar."
+
+## Cenário 3: Validação de fluxo completo até a tela de sucesso
+
+**Dado** que o usuário está na tela de pagamento após clicar em finalizar compra;
+
+**Quando** o usuário selecionar a forma de pagamento e clicar no botão definitivo de fechar o pedido;
+
+**Então** o sistema deve processar a transação e exibir a tela de confirmação de sucesso.
