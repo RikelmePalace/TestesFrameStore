@@ -1,4 +1,3 @@
-# Dependências do Node (Muito pesadas, nunca devem ir ao Git)
 node_modules/
 package-lock.json
 
@@ -7,7 +6,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Configurações locais do VS Code ou outros editores
 .vscode/
 .idea/
 *.suo
@@ -16,7 +14,6 @@ yarn-error.log*
 *.sln
 *.swp
 
-# Arquivos de log e relatórios do Jest (se você gerar coverage depois)
 coverage/
 .jest/
 
