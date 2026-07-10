@@ -1,19 +1,19 @@
 # 1. Jogo no Carrinho
 
-***Cenário 1: Adicionar um novo jogo ao carrinho com sucesso***
+**Cenário 1: Adicionar um novo jogo ao carrinho com sucesso**
 
-***Dado*** que o usuário está logado e na página inicial do sistema;
-***Quando*** o usuário selecionar o jogo "ARC Raiders" e clicar em "Adicionar ao Carrinho";
-***Então*** o sistema deve incluir o jogo no carrinho com sucesso;
-***E*** o contador do carrinho deve exibir "1" item.
+**Dado** que o usuário está logado e na página inicial do sistema;
+**Quando** o usuário selecionar o jogo "ARC Raiders" e clicar em "Adicionar ao Carrinho";
+**Então** o sistema deve incluir o jogo no carrinho com sucesso;
+**E** o contador do carrinho deve exibir "1" item.
 
-# ***Cenário 2: Tentativa de adicionar um jogo que já está no carrinho***
+# **Cenário 2: Tentativa de adicionar um jogo que já está no carrinho**
 
-***Dado*** que o usuário está logado e na página inicial do sistema;
-***E*** que o jogo "ARC Raiders" já foi adicionado ao carrinho anteriormente;
-***Quando*** o usuário tentar clicar novamente para colocar o jogo "ARC Raiders" no carrinho;
-***Então*** o sistema deve exibir a mensagem: "Este jogo já está no carrinho";
-***E*** a quantidade de itens no carrinho não deve sofrer alterações.
+**Dado** que o usuário está logado e na página inicial do sistema;
+**E** que o jogo "ARC Raiders" já foi adicionado ao carrinho anteriormente;
+**Quando** o usuário tentar clicar novamente para colocar o jogo "ARC Raiders" no carrinho;
+**Então** o sistema deve exibir a mensagem: "Este jogo já está no carrinho";
+**E** a quantidade de itens no carrinho não deve sofrer alterações.
 
 # **Cenário 3: Remoção de um jogo do carrinho**
 
